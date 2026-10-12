@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEON SHIFT</title>
+  <link rel="stylesheet" href="juego inovador con ia.css">
+  <script src="juego inovador con ia.js" defer></script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="logo" href="#">NEON<span>SHIFT</span></a>
+      <div class="record">RÉCORD <strong id="best">0</strong></div>
+    </header>
+
+    <section class="game-card">
+      <div class="hud">
+        <div>
+          <span class="label">PUNTUACIÓN</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="gravity-badge" id="gravity">GRAVEDAD ↓</div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="game" width="900" height="480"
+          aria-label="Videojuego NEON SHIFT"></canvas>
+
+        <div class="overlay" id="overlay">
+          <div class="mini-logo">N / S</div>
+          <p class="eyebrow">UN ARCADE DIFERENTE</p>
+          <h1 id="overlay-title">CAMBIA<br>LAS REGLAS.</h1>
+          <p id="overlay-text">
+            Cambia la gravedad, recoge cristales y sobrevive.
+          </p>
+          <button id="startButton">INICIAR JUEGO ↗</button>
+          <small>ESPACIO / CLIC PARA CAMBIAR LA GRAVEDAD</small>
+        </div>
+      </div>
+
+      <footer class="game-footer">
+        <span>01 — SOBREVIVE</span>
+        <span>02 — RECOGE</span>
+        <span>03 — SUPERA TU RÉCORD</span>
+      </footer>
+    </section>
+
+    <p class="hint">
+      <span>ESPACIO</span> Cambiar gravedad
+      <span>CLIC</span> Cambiar gravedad
+    </p>
+  </main>
+</body>
+</html>
